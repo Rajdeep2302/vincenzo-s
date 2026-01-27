@@ -1,0 +1,122 @@
+.container {
+  width: 300px;
+  height: 450px;
+  cursor: pointer;
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 1s;
+  background-size: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px;
+}
+
+.container:hover .card {
+  transform: perspective(30px) rotateX(2deg) translateY(-50px);
+}
+
+.ice-cream {
+  width: 300px;
+  height: 450px;
+  position: absolute;
+  background-size: 100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+.container:hover .ice-cream {
+  transform: translateY(-100px);
+}
+
+.test-button {
+  position: absolute;
+  opacity: 0;
+  transition: 1s;
+}
+
+.container:hover .test-button {
+  transform: perspective(30px) rotateX(2deg) translateY(100px);
+  animation: displayButton 0.5s forwards;
+}
+
+.counter {
+  height: 300px;
+  width: 200px;
+  background: #000;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.roop-top {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: perspective(70px) rotateX(25deg);
+  margin-top: -50px;
+}
+.roop-color:nth-child(1) {
+  width: 40px;
+  height: 120px;
+  background-color: red;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.roop-color:nth-child(2) {
+  width: 40px;
+  height: 120px;
+  background-color: #fff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.roop-color:nth-child(3) {
+  width: 40px;
+  height: 120px;
+  background-color: red;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.roop-color:nth-child(4) {
+  width: 40px;
+  height: 120px;
+  background-color: #fff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.roop-color:nth-child(5) {
+  width: 40px;
+  height: 120px;
+  background-color: red;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.image-items {
+  width: 200px;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  border: #fff 10px solid;
+}
+
+@keyframes displayButton {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
