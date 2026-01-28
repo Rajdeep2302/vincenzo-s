@@ -45,7 +45,7 @@ const Flavors = () => {
                 // onClick={()=>(alert("This page is in under develop !!"))}
               >
                 <button className="blob-btn text-[24px] sm:text-[30px] lg:text-[40px]]">
-                  Test Now
+                  Taste Now
                   <span className="blob-btn__inner">
                     <span className="blob-btn__blobs">
                       <span className="blob-btn__blob"></span>
@@ -87,7 +87,7 @@ const Flavors = () => {
                 // onClick={()=>(alert("This page is in under develop !!"))}
               >
                 <button className="blob-btn text-[24px] sm:text-[30px] lg:text-[40px]]">
-                  Test Now
+                  Taste Now
                   <span className="blob-btn__inner">
                     <span className="blob-btn__blobs">
                       <span className="blob-btn__blob"></span>
@@ -129,7 +129,7 @@ const Flavors = () => {
                 // onClick={()=>(alert("This page is in under develop !!"))}
               >
                 <button className="blob-btn text-[24px] sm:text-[30px] lg:text-[40px]]">
-                  Test Now
+                  Taste Now
                   <span className="blob-btn__inner">
                     <span className="blob-btn__blobs">
                       <span className="blob-btn__blob"></span>
@@ -171,7 +171,7 @@ const Flavors = () => {
                 // onClick={()=>(alert("This page is in under develop !!"))}
               >
                 <button className="blob-btn text-[24px] sm:text-[30px] lg:text-[40px]]">
-                  Test Now
+                  Taste Now
                   <span className="blob-btn__inner">
                     <span className="blob-btn__blobs">
                       <span className="blob-btn__blob"></span>
@@ -213,7 +213,7 @@ const Flavors = () => {
                 // onClick={()=>(alert("This page is in under develop !!"))}
               >
                 <button className="blob-btn text-[24px] sm:text-[30px] lg:text-[40px]]">
-                  Test Now
+                  Taste Now
                   <span className="blob-btn__inner">
                     <span className="blob-btn__blobs">
                       <span className="blob-btn__blob"></span>
