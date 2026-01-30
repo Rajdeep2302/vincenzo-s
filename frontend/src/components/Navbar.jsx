@@ -59,7 +59,7 @@ const Navbar = () => {
   return (
     <>
       <Menu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-      <div className="w-full fixed top-0 left-0 z-40 mb-1">
+      <div className="w-full fixed top-0 left-0 z-100 mb-1">
         <div className="bg-(--color-nav-bg) h-16 sm:h-12 lg:h-14 xl:h-16 w-full justify-center items-center flex">
           <div className="w-6xl text-(--color-text) font-bold sm:text-md gap-0 sm:gap-20 lg:gap-8 lg:text-xl flex justify-evenly items-center">
             <div className="p-3 sm:hidden visible text-3xl text-(--color-text) w-full cursor-pointer">

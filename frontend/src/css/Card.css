@@ -112,11 +112,79 @@
   border: #fff 10px solid;
 }
 
+.container:hover {
+  z-index: 50;
+}
+
 @keyframes displayButton {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 210px;
+    height: 305px;
+    cursor: pointer;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ice-cream {
+    width: 210px;
+    height: 305px;
+    position: absolute;
+    background-size: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    transition: 1s;
+  }
+  .container:hover .ice-cream {
+    transform: translateY(-100px);
+  }
+  .container:hover .test-button {
+    transform: perspective(30px) rotateX(2deg) translateY(40px);
+    animation: displayButton 0.5s forwards;
+  }
+  .container:hover {
+    z-index: 50;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .container {
+    width: 150px;
+    height: 225px;
+    cursor: pointer;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ice-cream {
+    width: 150px;
+    height: 225px;
+    position: absolute;
+    background-size: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    transition: 1s;
+  }
+  .container:hover .ice-cream {
+    transform: translateY(-75px);
+  }
+  .container:hover .test-button {
+    transform: perspective(30px) rotateX(2deg) translateY(15px);
+    animation: displayButton 0.5s forwards;
+  }
+  .container:hover {
+    z-index: 10;
   }
 }

@@ -20,6 +20,10 @@ import sbb from './sbb.png'
 import cb from './cb.png'
 import paper_tear from './paper_tear_1.png'
 import blueBack from './blueBack.png'
+import contacted from './contacted.png'
+import order from './order.png'
+import cata from './cata.png'
+import tray from './tray.png'
 
 export const assets = {
     apple,
@@ -43,5 +47,38 @@ export const assets = {
     blueBack,
     bbb,
     sbb,
-    cb
+    cb,
+    contacted,
+    order,
+    cata,
+    tray,
 }
+
+
+export const flavors = [
+  {
+    id: 1,
+    name: "Pista Ice Cream",
+    image: pib,
+  },
+  {
+    id: 2,
+    name: "Blueberry Ice Cream",
+    image:bb,
+  },
+  {
+    id: 3,
+    name: "Strawberry Blueberry",
+    image: sbb,
+  },
+  {
+    id: 4,
+    name: "Chocolate Ice Cream",
+    image: cb,
+  },
+  {
+    id: 5,
+    name: "Pineapple Ice Cream",
+    image: pb,
+  },
+];
