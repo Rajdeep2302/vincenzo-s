@@ -1,9 +1,15 @@
 import React from "react";
+import { useMediaQuery } from "react-responsive";
 import "../css/Card.css";
 import "../css/BlobButton.css";
 import { assets, flavors } from "../assets/assets";
 
 const Flavors = () => {
+  const isXL = useMediaQuery({ query: "(min-width: 1280px)" });
+
+  const visibleFlavors = isXL
+    ? flavors.slice(0, 4)
+    : flavors.slice(0, 6);
   return (
     <div className="w-full h-fit bg-linear-to-b from-transparent to-[#1F6D1F] pb-10 relative justify-center items-center flex flex-col">
       <div className="max-w-360 w-full h-fit flex flex-col justify-start py-6 items-center">
@@ -17,7 +23,7 @@ const Flavors = () => {
         </div>
         {/* flavor images */}
         <div className="w-fit h-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 xl:grid-cols-4 gap-4">
-          {flavors.map((flavor) => (
+          {visibleFlavors.map((flavor) => (
             <div key={flavor.id} className="container">
               <img
                 src={assets.blueBack}
@@ -48,7 +54,7 @@ const Flavors = () => {
                   className="buttons-container"
                   // onClick={()=>(alert("This page is in under develop !!"))}
                 >
-                  <button className="blob-btn-flavors text-[12px] sm:text-[30px] lg:text-[40px]]">
+                  <button className="blob-btn-flavors text-[8px] sm:text-[30px] lg:text-[40px]]">
                     Taste Now
                     <span className="blob-btn__inner_flavors">
                       <span className="blob-btn__blobs">
