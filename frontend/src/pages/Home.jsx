@@ -7,7 +7,7 @@ import HomeContact from '../components/HomeContact'
 
 const Home = () => {
   return (
-    <div className='w-full flex flex-col relative justify-center items-center'>
+    <div className='flex flex-col max-w-screen overflow-hidden relative justify-center items-center'>
         <Navbar />
         <HomeOrder />
         <Flavors/>

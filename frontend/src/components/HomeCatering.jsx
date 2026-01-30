@@ -3,7 +3,7 @@ import { assets } from "../assets/assets";
 
 const HomeCatering = () => {
   return (
-    <div className="w-full flex justify-center items-center h-fit relative bg-linear-to-b from-transparent to-[#ebd8a9]">
+    <div className="w-screen flex justify-center items-center h-fit relative bg-linear-to-b from-transparent to-[#ebd8a9]">
       
         <div className="w-full min-h-150 absolute top-0 -mt-12 left-0">
           <img src={assets.cata} alt="" className="min-h-150 max-h-180 3xl:object-cover 3xl:object-bottom w-full aspect-[21/9]" />

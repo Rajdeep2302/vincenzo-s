@@ -1,11 +1,14 @@
-import React from 'react'
-import Home from './pages/Home'
+import React, { Suspense } from 'react'
+const Home = React.lazy(() => import('./pages/Home'))
+import Loading from './components/Loading'
 
 const App = () => {
   return (
-    <div className='min-h-screen w-screen overflow-x-hidden bg-[#FAF7EB]'>
+    <Suspense fallback={<Loading />}>
+    <div className='min-h-screen max-w-screen overflow-x-hidden bg-[#FAF7EB]'>
       <Home />
     </div>
+    </Suspense>
   )
 }
 

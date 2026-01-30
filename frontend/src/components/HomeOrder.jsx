@@ -4,7 +4,7 @@ import "../css/color.css";
 import "../css/BlobButton.css";
 const HomeOrder = () => {
   return (
-    <div className="w-full min-h-150 xl:min-h-190 max-h-190 relative justify-center items-center flex flex-col">
+    <div className="w-screen min-h-150 xl:min-h-190 max-h-190 relative justify-center items-center flex flex-col">
       <div className=" w-full min-h-150 absolute top-0 mt-10 2xl:mt-0 left-0">
         <img src={assets.order} alt="Order" className="min-h-150 max-h-180 3xl:object-cover 3xl:object-bottom w-full aspect-[21/9]" />
       </div>

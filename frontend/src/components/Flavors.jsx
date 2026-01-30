@@ -11,7 +11,7 @@ const Flavors = () => {
     ? flavors.slice(0, 4)
     : flavors.slice(0, 6);
   return (
-    <div className="w-full h-fit bg-linear-to-b from-transparent to-[#1F6D1F] pb-10 relative justify-center items-center flex flex-col">
+    <div className="w-screen h-fit bg-linear-to-b from-transparent to-[#1F6D1F] pb-10 relative justify-center items-center flex flex-col">
       <div className="max-w-360 w-full h-fit flex flex-col justify-start py-6 items-center">
         {/* heading */}
         <div className="w-full px-2 flex justify-evenly items-center">
