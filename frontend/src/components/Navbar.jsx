@@ -5,7 +5,7 @@ import { assets } from "../assets/assets";
 const Menu = ({ isMenuOpen, setIsMenuOpen }) => {
   return (
     <div
-      className={`fixed top-0 left-0 w-screen h-screen z-50 transition-all duration-500 ease-in-out ${
+      className={`fixed top-0 left-0 w-screen h-screen z-150 transition-all duration-500 ease-in-out ${
         isMenuOpen
           ? "pointer-events-auto visible"
           : "pointer-events-none invisible pointer-events-none delay-500"

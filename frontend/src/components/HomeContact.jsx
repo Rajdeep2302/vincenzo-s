@@ -4,7 +4,7 @@ import { assets } from "../assets/assets";
 const HomeContact = () => {
   return (
     <div className="w-full flex justify-center items-center min-h-100 max-h-180 relative bg-linear-to-b from-transparent to-[#ebd8a9]">
-      <div className="w-full min-h-100 max-h-180 absolute top-0 -mt-12 left-0">
+      <div className="w-full min-h-100 max-h-180 absolute top-0 left-0">
         <img
           src={assets.contacted}
           alt=""
